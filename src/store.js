@@ -12,7 +12,16 @@ const CHUNK_SIZE = parseInt(process.env.CHUNK_SIZE || '600');
 
 function loadStore() {
   if (!fs.existsSync(DATA_PATH)) return { chunks: [], metadata: {} };
-  return JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));
+  try {
+    const parsed = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));
+    // Gracefully handle empty or malformed store files
+    return {
+      chunks:   Array.isArray(parsed.chunks)   ? parsed.chunks   : [],
+      metadata: parsed.metadata && typeof parsed.metadata === 'object' ? parsed.metadata : {},
+    };
+  } catch {
+    return { chunks: [], metadata: {} };
+  }
 }
 
 function saveStore(store) {
