@@ -1,0 +1,176 @@
+MINDEDGE TRADING — ENHANCED EDITION
+SPX Scalping Framework v2.0
+
+Includes 10 critical refinements: Session windows · EMA conflict rules · Specific exit criteria · Mandatory GEX · Point-based profit rules · Trade invalidation.
+Built on ICT methodology, market structure, and probability-based decision making.
+
+================================================================================
+FOUNDATION — THE TRADER'S MINDSET
+================================================================================
+
+The single most important skill a scalper can develop is thinking in probabilities. Every trade is a bet — not a certainty. A calculated bet based on the information available at that moment.
+
+Core trading philosophy:
+"You take a bet when you buy or sell an option. Probability comes into play. Before entering, ask yourself: what are the odds of this going my way? Sometimes the odds are not in your favor. The only other question is: how do I keep playing? That question is directly related to your stop-loss — capital preservation."
+
+THE PRE-TRADE RITUAL (NEW in v2.0)
+Before every entry, state these five things out loud or in writing:
+1. Direction (Long or Short)
+2. Entry level (specific price)
+3. Stop-loss level (specific price)
+4. Target level (specific price or VRVP level)
+5. Confluence count (how many indicators agree)
+
+If you cannot state all five clearly, do not enter the trade.
+
+THREE CORE TRUTHS:
+1. There are no absolutes. The market holds information you are never privy to. Accept this completely.
+2. Winning and losing are too absolute. Did you execute your process correctly? A losing trade with perfect execution is a success. A winning trade taken recklessly is a failure waiting to repeat.
+3. Capital preservation is everything. Your stop-loss is your right to keep playing. A trader with capital can recover. A blown account cannot.
+
+================================================================================
+THE SYSTEM — MULTI-TIMEFRAME FRAMEWORK
+================================================================================
+
+Three timeframes in a top-down approach. Higher timeframes define direction and key levels. Lower timeframes provide entry precision. The 30-second chart is your execution chart — never your decision chart.
+
+Timeframe | Purpose | What You Mark
+10-Minute | Bias & direction | Session high/low, Golden Pocket, overall trend — BUYS ONLY or SELLS ONLY
+3-Minute | Setup identification | Fib zones as S/R, wait for price to enter Golden Pocket with room to run
+30-Second | Entry execution | Fib zone as your box, candle weakening, micro-structure confirmation
+
+SESSION TIME WINDOWS (NEW in v2.0)
+Not all hours are equal. Only trade during high-velocity windows.
+
+Window | Time (ET) | Character | Trade?
+Open | 9:30–10:30am | High velocity, trend establishing, strong follow-through | YES
+Mid-morning | 10:30–11:30am | Moderate momentum, fade opportunities, choppy at edges | SELECTIVE
+Lunch | 11:30am–2:00pm | Low volume, random, high noise-to-signal ratio | AVOID
+Power hour | 3:00–4:00pm | High velocity, institutional activity, strong closes | YES
+
+================================================================================
+INDICATORS — YOUR CONFIRMATION STACK
+================================================================================
+
+9 & 21 EMA — TREND & MOMENTUM
+- When price is above both EMAs and 9 is above 21 (bullish stack) — longs only.
+- EMA rejection on a pullback in a bullish trend = entry signal.
+- NEW v2.0: If 1-minute EMA alignment contradicts 5-minute, reduce size by 50% or skip. Mixed timeframe signals are the most common cause of stopped-out trades.
+- NEW v2.0: EMA slope matters as much as position. A flat 9 EMA crossing a flat 21 EMA has far less predictive value than a rising 9 crossing a rising 21.
+
+FIBONACCI — LEVEL IDENTIFICATION
+- Anchor from the most recent significant swing low to swing high (for longs).
+- Golden Pocket (0.618–0.65): highest institutional interest.
+- OTE Zone (0.705–0.786): optimal trade entry — deepest retracement still within bullish structure.
+- 0.236 level: shallow retracement support in strong trends.
+- NEW v2.0: VRVP anchored to current weekly open or session open only — not arbitrary visible range. Standardizing this eliminates the most common source of conflicting POC readings.
+
+BOS & ChoCh — MARKET STRUCTURE
+- BOS (Break of Structure): price takes out previous swing high/low — trend continuation.
+- ChoCh (Change of Character): first sign of trend reversal.
+- On 30-second: strong green candle breaking pullback high = micro-BOS — your trigger.
+- NEW v2.0: The 1-minute chart must not contradict the 30-second trigger. A 30s micro-BOS during a 1-minute bearish sequence is a false signal. Always confirm up one timeframe.
+
+VRVP & SVP — VOLUME FOOTPRINT
+- POC (Point of Control): highest-volume price level — a magnet for price.
+- Value Area High/Low (VAH/VAL): range where 70% of volume traded.
+- Enter inside the value area for high-probability trades.
+- NEW v2.0: Anchor VRVP to weekly open or session open only — not visible range.
+- NEW v2.0: Price outside the value area returns to it 80% of the time. When entering outside VA, your target IS the POC, not a Fibonacci level.
+
+GEX LEVELS — GAMMA EXPOSURE (MANDATORY)
+- GEX is no longer optional for SPX scalping. Mark it before the session opens.
+- Call walls: resistance. Put walls: support. HVL: the flip level.
+- Above HVL: market makers stabilize — buy the dip behavior dominates.
+- Below HVL: market makers amplify — sell the rip behavior dominates.
+- NEW v2.0: Never enter a trade if your target is blocked by a major gamma wall. The gamma wall IS your target, not an obstacle to pass through.
+- Source: SpotGamma, Squeeze Metrics, or similar. Check daily at 9:00am ET.
+
+FVGs & LIQUIDITY — CONFIRMATION & TARGETS
+- Fair Value Gap: gap between high of candle 1 and low of candle 3 in a three-candle sequence.
+- Price returns to fill FVGs before continuing — use as entry zones and targets.
+- Liquidity clusters above recent highs and below recent lows — smart money drives price there first.
+- A sweep of liquidity followed by immediate reversal is often the real trade.
+
+================================================================================
+EXECUTION — STEP-BY-STEP PROCESS
+================================================================================
+
+STEP 01 — PRE-SESSION PREPARATION (9:00am ET)
+- Check GEX levels from SpotGamma or Squeeze Metrics before every session.
+- Mark session high and low from yesterday on the 10-minute chart.
+- Identify bias: buys only or sells only today based on 10m structure.
+- Mark Golden Pocket and key Fibonacci zones.
+- Note HVL level: are we above or below it?
+- Confirm you are trading during an approved session window (9:30–10:30am or 3:00–4:00pm ET).
+
+STEP 02 — IDENTIFY THE SETUP (3-Minute or 5-Minute)
+- Wait for price to enter your pre-marked Fib zone (Golden Pocket or OTE).
+- Confirm EMA stack aligns with directional bias.
+- Look for BOS or ChoCh confirming structure.
+- Check VRVP — anchored to session open. Are you inside the value area?
+- Verify GEX — is your target blocked by a gamma wall? If so, do not enter.
+- NEW v2.0: If price has not triggered within 3 candles on the execution timeframe, the setup is INVALIDATED.
+
+STEP 03 — EXECUTE ON THE 30-SECOND CHART
+- Drop to 30-second. The Fib zone is your entry box.
+- Wait for the pullback candle (red in a long setup).
+- Trigger: strong candle breaking the high of the pullback candle (micro-BOS).
+- NEW v2.0: Confirm the 1-minute chart does NOT contradict the 30s trigger before entering.
+- Enter at or just after candle close. Stop-loss: just below the Fib zone boundary.
+- State your five pre-trade checks out loud before clicking.
+
+STEP 04 — TRADE MANAGEMENT — POINT-BASED RULES (NEW v2.0)
+- Move stop to breakeven after +8 points (not "20%" — be specific).
+- Take 50% off at +12 points. Let the remaining 50% run.
+- Trail the runner: move stop up by 4 points for every 4 points of further gain.
+- Exit criteria (specific, not subjective): EMA9 rolling over on 30s chart, OR bearish engulfing candle on 1-minute, OR price closing below 9 EMA on execution timeframe.
+- Never add to a losing position.
+
+STEP 05 — RE-ENTRY RULE (NEW v2.0)
+- If stopped out at breakeven and original thesis is still valid: ONE re-entry permitted.
+- Re-entry conditions: price must return to original Fib zone AND a fresh 30s trigger must form.
+- Use original stop parameters. No widening for the re-entry.
+- After two stopped-out attempts at the same level, the thesis is invalid. Move on.
+
+STEP 06 — POST-TRADE REVIEW
+- Log every trade: entry, exit, what you saw, how you felt, confluence count.
+- Rate setup quality — not the outcome. A losing trade with perfect execution is a success.
+- Ask: was my entry in the OTE zone? Was there EMA confluence? Was GEX checked? Was I inside the value area?
+- One thing done well, one thing to improve. That is the complete review.
+
+================================================================================
+NON-NEGOTIABLE RULES — v2.0
+================================================================================
+
+Rule 1: Only trade during approved session windows — 9:30–10:30am or 3:00–4:00pm ET. A valid setup in the lunch hour is not a valid trade.
+Rule 2: Only trade in the direction of the 10-minute bias. Fighting the dominant trend is the most common reason scalps fail.
+Rule 3: Check GEX before every session. No exceptions. If you have not checked it, you are not ready to trade.
+Rule 4: Never enter without at least 3 confluences. One indicator is a signal. Three are a setup. Less than three is gambling.
+Rule 5: If 1m EMA contradicts 5m, reduce size 50% or skip. Mixed timeframe EMA signals are the number one cause of stopped-out valid setups.
+Rule 6: Setup expires after 3 candles on the execution timeframe. A setup that has not triggered in 3 candles is no longer the same setup. Re-evaluate from the top down.
+Rule 7: Stop-loss set before entry. Always. Discretionary stops get moved. Pre-set stops protect capital unconditionally.
+Rule 8: Move stop to breakeven at +8 points. Specific, not percentage-based.
+Rule 9: Take 50% off at +12 points. Lock in real profit. Let the runner work with house money.
+Rule 10: One re-entry permitted if stopped at breakeven. Price must return to Fib zone and form a fresh trigger. Original stop parameters apply.
+Rule 11: Never average down on a losing position. Adding to a loser turns a bad trade into a catastrophic one.
+Rule 12: Do not trade within 30 minutes of a major news event. GEX levels and technical structure become irrelevant around scheduled catalysts.
+Rule 13: Maximum 3 losing trades in a session — then stop. After 3 losses, your judgment is compromised. Step away. Come back tomorrow.
+Rule 14: Log every trade. No exceptions. Unlogged trades are unreviewed mistakes that will repeat indefinitely.
+
+================================================================================
+PRE-TRADE CHECKLIST — v2.0
+================================================================================
+
+You need at least 6 of 10 boxes checked. Below 6 — do not take the trade.
+
+[ ] Session window confirmed — Is it 9:30–10:30am or 3:00–4:00pm ET?
+[ ] 10m bias confirmed — Are you trading with the dominant trend?
+[ ] GEX levels checked — HVL noted. No gamma wall blocking your target. Checked at 9:00am ET.
+[ ] EMA stack aligned — 9 above 21 (long) or 9 below 21 (short) on 10m and 3m/5m. No 1m contradiction.
+[ ] Price in Fib zone — Golden Pocket (0.618–0.65) or OTE zone (0.705–0.786) entry.
+[ ] BOS or ChoCh present — Structure event on 3m/5m confirming direction. 1m agrees.
+[ ] Inside Value Area — VRVP (anchored to session open) shows entry inside VAL–VAH.
+[ ] Setup not expired — Trigger formed within last 3 candles on 30s chart.
+[ ] 30s trigger visible — Micro-BOS candle on the execution chart. 1m does not contradict.
+[ ] Five pre-trade checks stated — Direction, entry, stop, target, confluence count. All five spoken or written.

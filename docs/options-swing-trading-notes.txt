@@ -1,0 +1,114 @@
+ANALYST NOTES — OPTIONS SWING TRADING FRAMEWORK & LIVE ANALYSIS EXAMPLES
+
+================================================================================
+OPTIONS SWING TRADING — RULES & CRITERIA
+================================================================================
+
+LIQUIDITY & VOLUME — HARD CUTOFFS
+Liquidity and volume matter most when selecting options for swing trades.
+
+Open Interest (OI):
+- Minimum acceptable OI: 500 contracts
+- Preferred OI: 4,000+ contracts for highly liquid names
+- Low OI = wide bid-ask spreads = difficult exits. Avoid low OI options entirely.
+
+Daily Volume:
+- Minimum: 500+ contracts per day
+- Ideal: daily volume should be at least 20% of the open interest
+- Volume relative to OI confirms active participation
+
+THE GREEKS — SWEET SPOT FOR SWING TRADES
+
+Delta:
+- Sweet spot: 0.50–0.80
+- Below 0.50: too much time decay eating your premium
+- Above 0.80: at that point you might as well buy the stock — the option behaves like stock anyway
+
+Implied Volatility (IV):
+- Ideal: IV below 50%
+- Warning zone: 50–75% IV — options are getting expensive
+- Hard cutoff: above 75% IV means options are too expensive and you're paying a premium you probably won't recover
+
+STRIKE SELECTION
+Strike selection is personal preference and depends on risk tolerance:
+- OTM (Out of the Money): 5–10% OTM works for swing trades — higher reward, higher risk
+- ITM (In the Money): more conservative, costs more, behaves more like stock
+Both are valid depending on your conviction level and risk appetite.
+
+RISK MANAGEMENT — SWING TRADES
+
+Stop Loss:
+- Max loss per trade: –25% to –50% of the premium paid (hard stop)
+- Tighter stops: –15% to –20% of premium (for high-conviction, lower-risk setups)
+- Note: This is very different from scalping stop methodology
+
+Profit Taking / Trimming:
+- Take some off around +50% gain
+- Scale out progressively as profits grow
+- Never let a big winner turn into a loser — trim into strength
+
+ATR FILTER
+- ATR (Average True Range) should be at least 2% of the stock price
+- If ATR is below 2%, the underlying doesn't move enough for the option to generate meaningful returns
+- ATR confirms the stock has enough daily movement to make options worthwhile
+
+MOMENTUM FILTER — DO NOT FIGHT IT
+- Do NOT buy calls when RSI is above 70 (overbought — don't chase)
+- Do NOT buy puts when RSI is below 30 (oversold — don't chase the downside)
+- Wait for RSI to reset before entering in the direction of the trend
+
+================================================================================
+LIVE ANALYSIS EXAMPLE — PLTR (PALANTIR)
+================================================================================
+
+Context: Market experiencing profit-taking, AI pullback, general market weakness.
+
+Question asked: Why specifically PLTR? Do you follow it closely? Have you looked at their growth metrics? What's their actual growth rate, revenue growth, and adjusted operating margin trend? Are those numbers declining or increasing?
+
+KEY INSIGHT ON BIAS IN OPTIONS TRADING:
+Bias is fundamentally subjective. There's no real "bias" in options trading — bias only matters when you're buying a stock and holding overnight. With options, you can still have a directional opinion, but as long as you can objectively measure the impact of that bias, you're fine. The key is knowing when your bias is helping you and when it's blinding you. It is very easy to be biased and bearish on a ticker when the whole market is selling — that's not analysis, that's noise.
+
+PLTR ANALYSIS SNAPSHOT:
+- Close price: $128.70
+- Session low: $126.50
+- Minor bounce from lows
+
+WHY PLTR OPTIONS ARE RISKY IN THIS CONTEXT:
+- VIX at 19 and rising → Options are expensive, IV is elevated
+- Only $2.20 above a critical support level → Too tight to call direction with confidence
+- Broad market weakness → Could easily gap down overnight
+- ATR of $7.56 → This stock moves $7+ per day, so risk is elevated even for swing trades
+
+TWO SETUPS TO WATCH (TRIGGER-BASED — DO NOT ENTER WITHOUT CONFIRMATION):
+
+BULLISH SETUP — Double Bottom Play:
+Only enter if PLTR:
+- Tags $126.50–$127.00 and bounces hard
+- Prints a strong green reversal candle with conviction
+- Shows 2x+ average volume on the bounce (volume confirms the reversal)
+- Closes above $132.00 on the reversal day
+This confirms buyers are actively defending the level. Without all four conditions, do not enter long.
+
+BEARISH SETUP — Breakdown Play:
+Only enter if PLTR:
+- Closes below $126.50 with real, above-average volume
+- Shows multiple failed attempts to reclaim $126.50 as support
+- Broader market is also breaking down simultaneously
+- No reversal attempt whatsoever
+This confirms sellers are in full control and the level has failed.
+
+KEY LESSON FROM THIS EXAMPLE:
+Never enter a trade just because a stock is near a level. Wait for the trigger — the confirmation candle, the volume, the structure. The setup either validates or it doesn't. Patience is part of the edge.
+
+================================================================================
+GENERAL ANALYST PHILOSOPHY
+================================================================================
+
+On research before trading:
+Before trading any name, understand: What is their growth rate? Revenue growth trend? Adjusted operating margin trend? Are the fundamentals improving or deteriorating? Price action without fundamental context is gambling on technicals alone.
+
+On market-wide weakness:
+When the whole market is selling, everything looks bearish. That's not your edge — that's the crowd. Look for stocks holding up relative to the market (relative strength) for long setups, and stocks breaking down harder than the market for short setups.
+
+On capital preservation:
+A trader with capital can recover from any loss. A blown account cannot. Protect capital first, generate returns second. This order of priority is non-negotiable.
