@@ -411,6 +411,14 @@ function truncate(str, max) {
   return str.length > max ? str.slice(0, max - 3) + '...' : str;
 }
 
+// ─── Health Check HTTP Server (keeps Railway happy) ──────────────────────────
+import http from 'http';
+const PORT = process.env.PORT || 3000;
+http.createServer((req, res) => {
+  res.writeHead(200);
+  res.end(`${ANALYST_NAME} bot is running ✅`);
+}).listen(PORT, () => console.log(`🌐 Health check server on port ${PORT}`));
+
 client.on('error', err => console.error('Discord error:', err));
 process.on('unhandledRejection', err => console.error('Unhandled rejection:', err));
 
