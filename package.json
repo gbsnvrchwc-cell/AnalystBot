@@ -1,0 +1,20 @@
+{
+  "name": "analyst-discord-bot",
+  "version": "1.0.0",
+  "description": "Discord bot that responds as an analyst based on their research materials",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "ingest": "node src/ingest.js",
+    "dev": "node --watch src/index.js",
+    "register": "node src/register-commands.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "discord.js": "^14.16.0",
+    "pdf-parse": "^1.1.1",
+    "dotenv": "^16.4.5",
+    "natural": "^8.0.1"
+  }
+}
